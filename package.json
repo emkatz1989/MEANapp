@@ -1,0 +1,8 @@
+{
+	"name": "angular-node-practice",
+	"main": "server.js",
+	"dependencies": {
+		"express": "~4.9.1"
+	}
+}
+
