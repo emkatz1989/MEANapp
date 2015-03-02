@@ -31,12 +31,13 @@ module.exports = function(app, express) {
 		}
 		else if (user){
 
-			//check password matches
+			//check if password matches
 			var validPassword = user.comparePassword(req.body.password);
 			if(!validPassword) {
 				res.json({success: false, message: 'Authentication failed. Wrong password.'});
 			}
 			else {
+				
 				//if user is found and password is right
 				//create token
 				var token = jwt.sign(user, superSecret, {
