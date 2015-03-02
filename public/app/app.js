@@ -1,4 +1,4 @@
-angular.module('routerApp', ['routerRoutes', 'ngAnimate'])
+angular.module('meanApp', ['routerRoutes', 'ngAnimate', 'stuffService'])
 
 //create the controllers
 
@@ -12,6 +12,24 @@ angular.module('routerApp', ['routerRoutes', 'ngAnimate'])
     vm.bigMessage = 'A smooth sea never made a skilled sailor.';
 
 })
+
+
+//stuffservice controller where Stuff Factory is injected
+// .controller('userController', function(Stuff){
+
+// 	var vm = this;
+
+// 	//get all the stuff
+// 	Stuff.all()
+
+// 	  //promise object
+// 	  .success(function(data) {
+
+// 	  	//bind the data to a controller variable
+// 	  	//this comes from the stuffService
+// 	  	vm.stuff = data;
+// 	  });
+// });
 
 // home page specific controller
 .controller('homeController', function(){
