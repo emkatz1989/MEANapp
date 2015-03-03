@@ -1,17 +1,17 @@
-angular.module('meanApp', ['appRoutes', 'ngAnimate', 'authService', 'mainCtrl', 'userCtrl', 'userService'])
+angular.module('meanApp', [ 'ngAnimate','appRoutes','authService', 'mainCtrl', 'userCtrl', 'userService']);
 
 //create the controllers
 
 
 //this will be the main controller for the entire site
-.controller('mainController', function(){
+// .controller('mainController', function(){
 
-    var vm = this;
+//     var vm = this;
 
-    //create a bigMessage variable to display in the view
-    vm.bigMessage = 'A smooth sea never made a skilled sailor.';
+//     //create a bigMessage variable to display in the view
+//     vm.bigMessage = 'A smooth sea never made a skilled sailor.';
 
-})
+// })
 
 
 //stuffservice controller where Stuff Factory is injected
@@ -31,29 +31,29 @@ angular.module('meanApp', ['appRoutes', 'ngAnimate', 'authService', 'mainCtrl', 
 // 	  });
 // });
 
-// home page specific controller
-.controller('homeController', function(){
+// // home page specific controller
+// .controller('homeController', function(){
 
-	var vm=this;
+// 	var vm=this;
 
-	vm.message= "This is the home page!";
+// 	vm.message= "This is the home page!";
 
-})
+// })
 
-//about page controller
-.controller('aboutController', function(){
+// //about page controller
+// .controller('aboutController', function(){
 
-	var vm=this;
+// 	var vm=this;
 
-	vm.message = 'Look! I am an about page.';
+// 	vm.message = 'Look! I am an about page.';
 
-})
+// })
 
-//contact page controller
-.controller('contactController', function(){
+// //contact page controller
+// .controller('contactController', function(){
 
-	var vm = this;
+// 	var vm = this;
 
-	vm.message = 'Contact Page!';
+// 	vm.message = 'Contact Page!';
 
-});
+// });
