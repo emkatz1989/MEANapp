@@ -21,9 +21,13 @@ angular.module('mainCtrl', [])
  	//function to handle login form
  	vm.doLogin = function() {
 
+ 		   //show processing icon
+ 		   vm.processing = true;
+
  		//call the Auth.login() function
  		Auth.login(vm.loginData.username, vm.loginData.password)
  		 .success(function(data) {
+ 		 	vm.processing = false; //processing stops
 
  		  //get user information after logging in
  		  Auth.getUser()

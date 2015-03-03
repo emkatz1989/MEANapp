@@ -6,20 +6,19 @@ angular.module('appRoutes', ['ngRoute'])
 	$routeProvider
 
 	//route for the home page
-
 	.when('/',{
 		templateUrl: 'app/views/pages/home.html',
 		// controller : 'homeController',
 		// controllerAs : 'home'
+	})
+
+	//route for the login page
+	.when('/login',{
+		templateUrl: 'app/views/pages/login.html',
+		controller : 'mainController',
+		controllerAs : 'login'
+
 	});
-
-	// //route for the about page
-	// .when('/about',{
-	// 	templateUrl: 'views/pages/about.html',
-	// 	controller : 'aboutController',
-	// 	controllerAs : 'about'
-
-	// })
 
 	// // route for contact page
 	// .when('/contact',{
