@@ -5,7 +5,7 @@ angular.module('appRoutes', ['ngRoute'])
 .config(function($routeProvider, $locationProvider){
 	$routeProvider
 
-	//route for the home page
+	//route for the home (index) page
 	.when('/',{
 		templateUrl: 'app/views/index.html',
 		// controller : 'homeController',
@@ -18,6 +18,13 @@ angular.module('appRoutes', ['ngRoute'])
 		controller : 'mainController',
 		controllerAs : 'login'
 
+	})
+
+	//route for all users page
+	.when('/users', {
+		templateUrl: 'app/views/pages/users/all.html',
+		controller: 'userController',
+		controllerAs: 'user'
 	});
 
 	// // route for contact page
