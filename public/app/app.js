@@ -1,4 +1,4 @@
-angular.module('meanApp', ['routerRoutes', 'ngAnimate', 'stuffService'])
+angular.module('meanApp', ['appRoutes', 'ngAnimate', 'authService', 'mainCtrl', 'userCtrl', 'userService'])
 
 //create the controllers
 
